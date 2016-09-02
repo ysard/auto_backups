@@ -1,0 +1,11 @@
+# List mount targets with `systemctl list-units -t mount`
+[Unit]
+Description=Auto backup of the system when specific partition is mounted.
+Requires=media-MY_MOUNT_POINT.mount
+After=media-MY_MOUNT_POINT.mount
+
+[Service]
+ExecStart=/MY_DIRECTORY/rsync_wrapper.sh
+
+[Install]
+WantedBy=media-MY_MOUNT_POINT.mount

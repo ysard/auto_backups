@@ -1,0 +1,120 @@
+### C ###
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Debug files
+*.dSYM/
+*.su
+
+
+### C++ ###
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Qt build directories
+build-*
+
+
+### Python ###
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*$py.class
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+### Linux ###
+*~
+#*.bak
+lost+found/*
+
+# temporary files which can be created if a process still has a handle open of a deleted file
+.fuse_hidden*
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+Trash*
+#~/.local/share/Trash/*
+
+# Cache files
+.cache/*
+cache/*
+Cache/*
+# Zotero, Firefox cache
+cache2/*
+cache-localhost/*
+cache-kali/*
+.thumbnails
+
+# Logs files
+logs
+#*log
+
+# User home
+.adobe/*
+.xsession-errors
+.Xauthority
+.kde/share/apps/dolphin/view_properties/*
+.kde/share/apps/RecentDocuments/*
+# Python virtualenvs
+.virtualenvs/*
+dd
+# Downloads for PlayOnLinux
+.PlayOnLinux/ressources/*
+playonlinux.log
+
+
+### MicrosoftOffice ###
+*.tmp
+.~lock*
+
+# Word temporary
+~$*.doc*
+
+# Excel temporary
+~$*.xls*
+
+# Excel Backup File
+*.xlk
+
+# PowerPoint temporary
+~$*.ppt*
+
+
+### Windows ###
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN
+
+# Windows shortcuts
+*.lnk
+
+# Temp directories
+Tmp/*
+Temp/*
+History/*
+Temporary Internet Files/*
+
