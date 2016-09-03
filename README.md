@@ -18,13 +18,15 @@ The various folders are processed at the end of the script by as many calls to t
 Example:
 
     ```shell
-    backup_process $ SRC_DATA $ BACKUP_NAME_DATA "${SCRIPT_DIR}/include_DATA"
+    backup_process $SRC_DATA $BACKUP_NAME_DATA "${SCRIPT_DIR}/include_DATA"
     ```
 
 The 3rd parameter is optional, it refers to a file that lists the data to
 be backed up in `$SRC_DATA`.
 The syntax of the patterns in this file is explained in
 [rsync documentation](https://download.samba.org/pub/rsync/rsync.html).
+
+A file with patterns of files to exclude is provided (`exclude_all`). Feel free to fill it out.
 
 # Systemd
 
