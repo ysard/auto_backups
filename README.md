@@ -17,7 +17,9 @@ The various folders are processed at the end of the script by as many calls to t
 
 Example:
 
-     backup_process $ SRC_DATA $ BACKUP_NAME_DATA "${SCRIPT_DIR}/include_DATA"
+    ```bash
+    backup_process $ SRC_DATA $ BACKUP_NAME_DATA "${SCRIPT_DIR}/include_DATA"
+    ```
 
 The 3rd parameter is optional, it refers to a file that lists the data to
 be backed up in `$SRC_DATA`.
@@ -34,20 +36,21 @@ and the path of `rsync_wrapper.sh`; Then, copy the file to `/etc/systemd/system`
 
 Enable the service :
 
-    :::console
+    ```bash
     $ systemctl enable auto-backup-MY_MOUNT_POINT.service
     Created symlink from /etc/systemd/system/media-MY_MOUNT_POINT.mount.wants/auto-backup-MY_MOUNT_POINT.service to /etc/systemd/system/auto-backup-MY_MOUNT_POINT.service.
+    ```
 
 Reload systemd daemon:
 
-    :::console
+    ```bash
     $ systemctl --system daemon-reload
-
+    ```
 
 The script runs when mounting the partition.
 One can visualize the output via the following command:
 
-    :::console
+    ```bash
     $ systemctl status auto-backup-MY_MOUNT_POINT.service
     ● auto-backup-MY_MOUNT_POINT.service - Auto backup of the system to a LUKS encrypted partition.
         Loaded: loaded (/etc/systemd/system/auto-backup-MY_MOUNT_POINT.service; enabled)
@@ -56,3 +59,4 @@ One can visualize the output via the following command:
         Main PID: 7140 (code=exited, status=0/SUCCESS)
 
     sept. 01 15:38:38 XXX rsync_wrapper.sh[7140]: Backup DATA in progress... [ OK ]
+    ```
