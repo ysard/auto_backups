@@ -5,7 +5,7 @@ Requires=media-MY_MOUNT_POINT.mount
 After=media-MY_MOUNT_POINT.mount
 
 [Service]
-ExecStart=/MY_DIRECTORY/rsync_wrapper.sh
+ExecStart=/PATH/TO//rsync_wrapper.sh
 
 [Install]
 WantedBy=media-MY_MOUNT_POINT.mount
